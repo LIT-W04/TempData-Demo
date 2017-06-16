@@ -1,0 +1,13 @@
+﻿@model WebApplication12.Models.PersonViewModel
+
+@if (Model.Person != null)
+{
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @Model.Person.FirstName @Model.Person.LastName saved successfully.
+    </div>
+}
+
+<h1>Welcome to our awesome website!!</h1>
+
+<a href="/tempdata/form" class="btn btn-lg btn-primary">Click here to sign up</a>

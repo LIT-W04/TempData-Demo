@@ -1,0 +1,15 @@
+﻿@model WebApplication12.Models.PersonViewModel
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+        <form method="POST" action="/session/submit">
+            <input type="text" value="@Model.Person.FirstName" name="firstName" class="form-control" placeholder="First Name" />
+            <br />
+            <input type="text" value="@Model.Person.LastName" name="lastName" class="form-control" placeholder="Last Name" />
+            <br />
+            <input type="text" value="@Model.Person.Age" name="age" class="form-control" placeholder="Age" />
+            <br />
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
